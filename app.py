@@ -124,12 +124,12 @@ if query:
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Optional: View Current Knowledge Base
-st.sidebar.title("Current Knowledge Base")
-try:
-    with open(ANSWERS_PATH, 'r') as f:
-        current_qa = json.load(f)
+# st.sidebar.title("Current Knowledge Base")
+# try:
+#     with open(ANSWERS_PATH, 'r') as f:
+#         current_qa = json.load(f)
     
-    for q, a in current_qa.items():
-        st.sidebar.expander(q).write(a)
-except (FileNotFoundError, json.JSONDecodeError):
-    st.sidebar.info("No Q&A pairs added yet.")
+#     for q, a in current_qa.items():
+#         st.sidebar.expander(q).write(a)
+# except (FileNotFoundError, json.JSONDecodeError):
+#     st.sidebar.info("No Q&A pairs added yet.")
