@@ -132,7 +132,7 @@ class PersonalAssistantRAG:
         
         # Retrieve the top answer
         top_index = top_indices[0][0]
-        answer = self.answers.get(str(top_index), "I don't have an answer for that.")
+        answer = self.answers[top_index]
         
         return {
             'answer': answer,
